@@ -5,8 +5,8 @@ import shap
 import matplotlib.pyplot as plt
 
 # Load trained model and preprocessor
-model = joblib.load("src/churn_model.pkl")
-preprocessor = joblib.load("src/preprocessor.pkl")
+model = joblib.load("churn_model.pkl")
+preprocessor = joblib.load("preprocessor.pkl")
 explainer = shap.TreeExplainer(model)
 
 # Page configuration
